@@ -1,0 +1,6 @@
+numbers = [12,34,56,78,90,123]
+largestnumber = max(numbers)
+print("largest number in the list is",largestnumber)
+output:
+largest number in the list is 123
+
