@@ -1,0 +1,13 @@
+try:
+  numerator = int(input("enter a numerator"))
+  denominator = int(input("enter a denominator"))
+  result = numerator/denominator
+  print(result)
+except ZeroDivisionError:
+  print("error:cannot divide by zero")
+except ValueError:
+  print("error invalid input")
+output:
+enter a numerator12
+enter a denominator0
+error:cannot divide by zero
