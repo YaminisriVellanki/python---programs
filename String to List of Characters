@@ -1,0 +1,6 @@
+text=input("Enter a string:") 
+characters=list(text) 
+print(characters)
+output:
+Enter a string:python  
+['p', 'y', 't', 'h', 'o', 'n']
