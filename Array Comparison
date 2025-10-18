@@ -1,0 +1,32 @@
+import numpy as np
+x=np.array([1,2,3,4])
+y=np.array([2,2,2,2])
+print("Array x:",x)
+print("Array y:",y)
+print("x>y:",np.greater(x,y))
+print("x>=y:",np.greater_equal(x,y))
+print("x<y:",np.less(x,y))
+print("x<=y",np.less_equal(x,y))
+print("x==y:",np.equal(x,y))
+print("Equal with Tolerance:",np.allclose(x,y))
+o=np.ones([2,2])
+z=np.zeros([2,2])
+l=np.linspace(0,1,5)
+print("Linspace array:",l)
+print("Ones array:",o)
+print("Zeros array:",z)
+print("To list array:",l.tolist())
+
+output:
+Array x: [1 2 3 4] 
+Array y: [2 2 2 2]
+x>y: [False False True True]
+x>=y: [False True True True]
+x<y: [ True False False False]
+x<=y [ True True False False]
+x==y: [False True False False]
+Equal with Tolerance: False
+Linspace array: [0. 0.25 0.5 0.75 1. ] 
+Ones array: [[1. 1.] [1. 1.]]
+Zeros array: [[0. 0.] [0. 0.]] 
+To list array: [0.0, 0.25, 0.5, 0.75, 1.0]
