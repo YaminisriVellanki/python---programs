@@ -1,0 +1,19 @@
+import pandas as pd 
+data=pd.Series([10,20,30,40,50]) 
+Pandas_List=data.tolist() 
+print("Pandas Series:") 
+print(data) 
+print("Converted Pandas List:") 
+print(Pandas_List) 
+print("Type of Panda list:",type(Pandas_List))
+output:
+Pandas Series:
+0    10
+1    20
+2    30
+3    40
+4    50
+dtype: int64
+Converted Pandas List:
+[10, 20, 30, 40, 50]
+Type of Panda list: <class 'list'>
