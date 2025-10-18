@@ -1,0 +1,6 @@
+kg=float(input("Enter weight in kgs:")) 
+pounds=2.2*kg 
+print("Weight in Pounds:",pounds)
+output:
+Enter weight in kgs:12
+Weight in Pounds: 26.400000000000002
