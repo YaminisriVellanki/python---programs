@@ -1,0 +1,66 @@
+import pandas as pd 
+import numpy as np 
+exam_data ={ 
+'name': ['Anastasia', 'Dima', 'Katherine', 'James', 'Emily','Michael', 
+'Matthew', 'Laura', 'Kevin', 'Jonas'],  
+'score': [12.5, 9, 16.5, np.nan, 9, 20, 14.5, np.nan, 8, 19],  
+'attempts': [1, 3, 2, 3, 2, 3, 1, 1, 2, 1],  
+'qualify': ['yes', 'no', 'yes', 'no', 'no', 'yes', 'yes', 'no', 'no', 'yes'] 
+}  
+labels = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']   
+df=pd.DataFrame(exam_data,index=labels) 
+print("i) Original DataFrame:") 
+print(df) 
+df.loc[df['name']=="James",'name']="Suresh" 
+print("\nii)After Changing James to Suresh") 
+print(df) 
+df['age']=[22,24,25,23,22,24,26,34,35,29] 
+print("\niii)After Inserting a new column") 
+print(df) 
+column_list=list(df.columns) 
+print("\niv)List of Columns Headers in DataFrame:") 
+print(column_list)
+
+output:
+i) Original DataFrame:
+        name  score  attempts qualify
+a  Anastasia   12.5         1     yes
+b       Dima    9.0         3      no
+c  Katherine   16.5         2     yes
+d      James    NaN         3      no
+e      Emily    9.0         2      no
+f    Michael   20.0         3     yes
+g    Matthew   14.5         1     yes
+h      Laura    NaN         1      no
+i      Kevin    8.0         2      no
+j      Jonas   19.0         1     yes
+
+ii)After Changing James to Suresh
+        name  score  attempts qualify
+a  Anastasia   12.5         1     yes
+b       Dima    9.0         3      no
+c  Katherine   16.5         2     yes
+d     Suresh    NaN         3      no
+e      Emily    9.0         2      no
+f    Michael   20.0         3     yes
+g    Matthew   14.5         1     yes
+h      Laura    NaN         1      no
+i      Kevin    8.0         2      no
+j      Jonas   19.0         1     yes
+
+iii)After Inserting a new column
+        name  score  attempts qualify  age
+a  Anastasia   12.5         1     yes   22
+b       Dima    9.0         3      no   24
+c  Katherine   16.5         2     yes   25
+d     Suresh    NaN         3      no   23
+e      Emily    9.0         2      no   22
+f    Michael   20.0         3     yes   24
+g    Matthew   14.5         1     yes   26
+h      Laura    NaN         1      no   34
+i      Kevin    8.0         2      no   35
+j      Jonas   19.0         1     yes   29
+
+iv)List of Columns Headers in DataFrame:
+['name', 'score', 'attempts', 'qualify', 'age']
+
