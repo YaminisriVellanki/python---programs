@@ -1,0 +1,12 @@
+import numpy as np
+arr=np.array([1,2,3,4,5])
+print("Array 1:",arr)
+print("None of the element is zero:",np.all(arr))
+arr1=np.array([1,0,2,5])
+print("Array 2:",arr1)
+print("None of the element is zero:",np.all(arr1))
+output:
+Array 1: [1 2 3 4 5]
+None of the element is zero: True
+Array 2: [1 0 2 5]
+None of the element is zero: False
